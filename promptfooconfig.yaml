@@ -23,7 +23,7 @@ tests:
     metadata:
       conversationId: pairing-flow
     assert:
-      - type: icontains
+      - type: contains
         value: "getIdentities"
 
   - description: "[Chat flow] Step 2: Create a new identity"
@@ -32,7 +32,7 @@ tests:
     metadata:
       conversationId: pairing-flow
     assert:
-      - type: icontains
+      - type: contains
         value: "createNewEthereumIdentity"
 
   - description: "[Chat flow] Step 3: Generate pairing link (agent checks identity first)"
@@ -51,5 +51,5 @@ tests:
     metadata:
       conversationId: pairing-flow
     assert:
-      - type: icontains
+      - type: contains
         value: "linkHumanToAgent"
